@@ -30,7 +30,7 @@ final InjectorIO io = InjectorIO._internal();
 DefinitionRegistry get registry => io._registry;
 
 class InjectorIO {
-  DefinitionRegistry _registry;
+  late DefinitionRegistry _registry;
   InjectorMode _mode = InjectorMode.DEBUG;
 
   InjectorIO._internal() {

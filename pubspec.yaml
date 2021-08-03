@@ -1,13 +1,13 @@
 name: injectorio
 description: Inject your dependencies easily and quickly. Register in one place and use `get()` everywhere to retrieve your instances and Keeper will take car of the rest.
 version: 1.0.5
-homepage: https://github.com/pedromassango/injector_io
+homepage: https://github.com/kiratheone/injector_io
 
 environment:
-  sdk: ">=2.2.2 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  logger: ^0.7.0+2
+  logger: ^1.0.0
   flutter:
     sdk: flutter
 

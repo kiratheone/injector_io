@@ -63,13 +63,13 @@ class DefinitionRegistry {
 
   T _getInstance<T>(T) {
     if (_kInstances.containsKey(T)) {
-      if (_kInstances[T].type == Kind.SINGLE) {
+      if (_kInstances[T]?.type == Kind.SINGLE) {
         _showGetSingleInstance(T);
-        return _kInstances[T].instance;
+        return _kInstances[T]?.instance;
       }
 
       _showGetFactoryInstance(T);
-      return _kInstances[T].creator();
+      return _kInstances[T]?.creator();
     }
 
     throw _instanceNotFoundException(T);

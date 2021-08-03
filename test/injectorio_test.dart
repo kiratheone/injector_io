@@ -4,13 +4,13 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:injectorio/injectorio.dart';
 
 class A {
-  int key;
+  int? key;
   A();
 }
 
 class B {
   final A a;
-  int k;
+  int? k;
   B(this.a);
 }
 
